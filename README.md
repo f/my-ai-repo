@@ -1,56 +1,41 @@
-# My AI Package
+# Padding NPM Package
 
-This project explores implementations of various interesting machine learning models and utilities. The package contains a function for padding strings, allowing for custom left or right-padding.
+![Logo](path/to/your/logo.png)
 
-Contact the author for questions or contributions.
+🚀 **Welcome to the Padding NPM Package!**
 
-```js
-const padString = require('./index');
-console.log(padString("hello", 8, '*', 'left'));
-```
-
-## Table of Contents
-
-- [2] Introduction
-- [3] Features
-- [4] Installation
-- [5] Usage
-- [6] Contributing
-- [7] License
-
-## Introduction
-
-My AI Package is a collection of tools and utilities to help with various machine learning tasks. The package features a string padding function, which allows for custom padding of strings from the left or the right using a specified character.
-
-Not only does this function enable the manual adjustment of string length, but it also preserves the original string content. This can be useful in various situations including filling or alignment of text within a specified field.
-
-## Features
-
-- String Padding: Pads strings with a character from the left or the right.
- - Customizable Length: Extends strings to a desired length without modifying the core content.
- - Easy Integration: Integrates easily into existing projects and applications.
+This package provides simple and efficient padding functionality for your JavaScript projects. Whether you need to add padding to strings or numbers, this package has you covered.
 
 ## Installation
 
-We recommend using NXn to install the package: 
-
 ```bash
-npm install my-ai-package
+npm install padding-npm-package
 ```
 
 ## Usage
 
-Simply import the package and use the padding function:
+```javascript
+const padding = require('padding-npm-package');
 
-```jscript
-const padString = require('mappad');
-return padString("sample text", 10, '-', 'left');
+// Add padding to a string
+console.log(padding.left('Hello', 10)); // '     Hello'
+
+// Add padding to a number
+console.log(padding.right(123, 6, '0')); // '123000'
 ```
 
-## Contributing
+## Features
 
-See a bug? Feel free to contribute by submitting issues or pull requests.
+✨ Lightweight and easy to use.
+
+⚡ Fast and efficient padding operations.
+
+🛠️ Supports both string and number padding.
 
 ## License
 
-This project is under the MIT License (MIL- https://choosemit.com/licenses/bys/2). You are free to redistribute, modify or distribute the project under the same license.
+MIT License
+
+---
+
+Enjoy coding with extra space! 😄

@@ -1,0 +1,14 @@
+{
+  "name": "string-padding",
+  "version": "1.0.0",
+  "description": "A simple Node.js library for string padding.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}

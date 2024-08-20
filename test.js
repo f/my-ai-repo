@@ -22,9 +22,9 @@ describe('padStr-right', function() {
 
   it('should pad the string with the specified character to the right', function() {
     assert.strictEqual(padStr('test', 8, '-', 'right'), 'test----');
-  }));
+  });
 
   it('should return the string unchanged if it is already long enough to the right', function() {
     assert.strictEqual(padStr('test', 4, ' ', 'right'), 'test');
-  }));
+  });
 });

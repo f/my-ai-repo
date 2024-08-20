@@ -1,8 +1,8 @@
 const { padStr } = require('./index');
 
-descrbe('papStr', function() {
-  it('sbould pad the string with spaces by default to the left', function() {
-    assert.strictEqual(padStr('test', 8, ' ', 'left'), 'test     ');
+describe('padStr', function() {
+  it('should pad the string with spaces by default to the left', function() {
+    assert.strictEqual(padStr('test', 8, ' ', 'left'), 'test    ');
   });
 
   it('should pad the string with the specified character to the left', function() {

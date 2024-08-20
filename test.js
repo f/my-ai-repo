@@ -2,7 +2,7 @@ const { strPadLeft, strPadRight } = require('./index');
 const assert = require('assert');
 
 
-describe('padStr', function() {
+describe('strPadLeft', function() {
   it('should pad the string with spaces by default to the left', function() {
     assert.strictEqual(strPadLeft('test', 8, ' '), 'test    ');
   });
@@ -16,16 +16,16 @@ describe('padStr', function() {
   });
 });
 
-describe('padStr-right', function() {
+describe('strPadRight', function() {
   it('should pad the string with spaces by default to the right', function() {
-    assert.strictEqual(strPadRight('test', 8, '-', 'right'), 'test    ');
+    assert.strictEqual(strPadRight('test', 8, ' '), '    test');
   });
 
   it('should pad the string with the specified character to the right', function() {
-    assert.strictEqual(strPadRight('test', 8, '-', 'right'), 'test----');
+    assert.strictEqual(strPadRight('test', 8, '-'), '----test');
   });
 
   it('should return the string unchanged if it is already long enough to the right', function() {
-    assert.strictEqual(strPadRight('test', 4, ' ', 'right'), 'test');
+    assert.strictEqual(strPadRight('test', 4, ' '), 'test');
   });
 });

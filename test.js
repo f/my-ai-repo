@@ -1,6 +1,7 @@
 const { strPadLeft, strPadRight } = require('./index');
 const assert = require('assert');
 
+
 describe('padStr', function() {
   it('should pad the string with spaces by default to the left', function() {
     assert.strictEqual(strPadLeft('test', 8, ' '), 'test    ');

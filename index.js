@@ -1,12 +1,11 @@
+function padStr() {
+    return function (str, length, char, direction) {
+        if (str.length >= length) return str;
+        const padding = char.repeat(length - str.length);
+        return direction === 'left'? (padding + str) : (str + padding);
+    };
+}
+
 module.exports = {
-    strPadLeft: function (str, length, char = ' ') {
-        if (str.length >= length) return str;
-        const padding = char.repeat(length - str.length);
-        return str + padding;
-    },
-    strPadRight: function (str, length, char = ' ') {
-        if (str.length >= length) return str;
-        const padding = char.repeat(length - str.length);
-        return padding + str;
-    }
+    padStr: padStr()
 };

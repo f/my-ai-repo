@@ -17,7 +17,7 @@ describe('padStr', function() {
 
 describe('padStr-right', function() {
   it('should pad the string with spaces by default to the right', function() {
-    assert.strictEqual(strPadRight('test', 8, ' '), 'test    ');
+    assert.strictEqual(strPadRight('test', 8, '-', 'right'), 'test    ');
   });
 
   it('should pad the string with the specified character to the right', function() {
